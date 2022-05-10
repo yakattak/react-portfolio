@@ -17,7 +17,7 @@ function App() {
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
   const [contactSelected, setContactSelected] = useState(false);
-  const [aboutSelected, setAboutSelected] = useState(false);
+  const [aboutSelected, setAboutSelected] = useState(true);
 
   return (
     <div>
