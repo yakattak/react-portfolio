@@ -42,7 +42,18 @@ function App() {
     <ContactForm></ContactForm>
   )}
       </main>
+      <footer>
+        <p>
+          <a href = "https://github.com/yakattak" target = '_blank'> Link to my Github!</a>
+        </p>
+        <p>
+          <a href = "https://www.linkedin.com/in/steven-calebrese-52264976/" target = '_blank'> Link to my ...LinkedIn!</a>
+        </p>
+        
+        
+    </footer>
     </div>
+    
   );
 }
 

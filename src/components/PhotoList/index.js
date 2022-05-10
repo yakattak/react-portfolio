@@ -15,30 +15,21 @@ const PhotoList = ({ category }) => {
         deployLink: 'https://yakattak.github.io/weatherme/'
     },
     {
-      name: 'Grocery booth',
+      name: 'Post-Up',
       category: 'applications',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+        'Post-Up is an app that lets users see local pick up athletic games and decide if they are going to attend. Attendance is recorded and other users can see how many people are showing up.',
+        repoLink: 'https://github.com/yakattak/Post-Up',
+        deployLink: 'https://yakattak-shindig4.herokuapp.com/'
     },
     {
-      name: 'Building exterior',
+      name: 'Password Generator',
       category: 'applications',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+        'This is a random password generator coding bootcamp assignment - the HTML and CSS were provided for us',
+        repoLink: 'https://github.com/yakattak/password-generator',
+        deployLink: 'https://yakattak.github.io/password-generator/'
     },
-    {
-      name: 'Restaurant table',
-      category: 'applications',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
-    },
-    {
-      name: 'Cafe interior',
-      category: 'applications',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
-    },
-    
   ]);
 
   const currentPhotos = photos.filter(photo => photo.category === category);
