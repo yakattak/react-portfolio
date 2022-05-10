@@ -7,32 +7,34 @@ const PhotoList = ({ category }) => {
 
   const [photos] = useState([
     {
-      name: 'Grocery aisle',
-      category: 'commercial',
+      name: 'photo-port',
+      category: 'applications',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+        'Coding bootcamp assignment: Create a weather app that pulls from openweathermap, saves search history to local storage, and displays current and 5 day weather.',
+        repoLink: 'https://github.com/yakattak/weatherme',
+        deployLink: 'https://yakattak.github.io/weatherme/'
     },
     {
       name: 'Grocery booth',
-      category: 'commercial',
+      category: 'applications',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
     },
     {
       name: 'Building exterior',
-      category: 'commercial',
+      category: 'applications',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
     },
     {
       name: 'Restaurant table',
-      category: 'commercial',
+      category: 'applications',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
     },
     {
       name: 'Cafe interior',
-      category: 'commercial',
+      category: 'applications',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
     },

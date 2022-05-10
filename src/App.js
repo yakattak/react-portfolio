@@ -8,8 +8,8 @@ import Resume from './components/Resume'
 function App() {
   const [categories] = useState([
     {
-      name: 'commercial',
-      description: 'Photos of grocery stores, food trucks, and other commercial projects',
+      name: 'applications',
+      description: 'Photos of grocery stores, food trucks, and other applications projects',
     }
   ]);
 
