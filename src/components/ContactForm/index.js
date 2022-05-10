@@ -34,8 +34,12 @@ function ContactForm() {
   };
 
   return (
-    <section>
+    <section >
+
       <h1 data-testid="h1tag">Contact me</h1>
+      <div className='about-section'>
+      
+      <div >
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>
@@ -56,6 +60,17 @@ function ContactForm() {
         )}
         <button data-testid="button" type="submit">Submit</button>
       </form>
+      </div>
+      <div>
+        <div>
+      <a className = 'link-button' href = "mailto: stevecalebrese@.com">Send Email to Steve.Calebrese@gmail.com</a>
+      </div>
+      <div>
+      <a className = 'link-button'  href = "https://calendly.com/steve-calebrese/30min">Schedule a time to chat with Calendly</a>
+          </div>
+        
+      </div>
+      </div>
     </section>
   );
 }

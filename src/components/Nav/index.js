@@ -26,12 +26,12 @@ function Nav(props) {
       </h2>
       <nav>
         <ul className="flex-row">
-        <li className={`mx-2 ${aboutSelected && 'navActive'}`}>
+        <li className={`mx-2 ${aboutSelected && !contactSelected && !resumeSelected && 'navActive'}`}>
             <span data-testid="about" onClick={() => setAboutSelected(true) & setContactSelected(false) & setResumeSelected(false)}>
               About me
             </span>
           </li>
-          <li className={`mx-2 ${contactSelected && 'navActive'}`}>
+          <li className={`mx-2 ${contactSelected && !aboutSelected && !resumeSelected && 'navActive'}`}>
             <span onClick={() => setContactSelected(true) & setAboutSelected(false) & setResumeSelected(false)}>
               Contact
             </span>
@@ -39,7 +39,7 @@ function Nav(props) {
           {categories.map((category) => (
             <li
               className={`mx-1 ${
-                currentCategory.name === category.name && !contactSelected && `navActive`
+                currentCategory.name === category.name && !contactSelected && !aboutSelected && !resumeSelected && `navActive`
                 }`}
               key={category.name}
             >

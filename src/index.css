@@ -54,6 +54,8 @@ h6 {
 
 h1 {
   font-size: 2.25rem;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 h2 {
@@ -79,8 +81,9 @@ h6 {
 p {
   font-size: 1.1rem;
   margin-top: 0;
+  margin-left: 10;
+  width: 50%;
 }
-
 a {
   color: var(--tertiary);
   text-decoration: none;
@@ -129,7 +132,7 @@ span[role="img"] {
 }
 
 form {
-  width: 40%;
+  width: 80%;
 }
 
 input {
@@ -145,6 +148,9 @@ input:focus {
   border: 1px solid var(--secondary);
   box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
 }
+.block {
+  display: block;
+}
 
 li {
   list-style: none;
@@ -159,7 +165,7 @@ nav  li {
 }
 
 textarea {
-	width: 600px;
+	width: 100%;
 	height: 120px;
 	border: 3px solid #cccccc;
 	padding: 5px;
@@ -170,6 +176,26 @@ textarea {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.link-button {
+  background-color: #4CAF50; /* Green */
+  border: silver;
+  color: white;
+  padding: 15px 32px;
+  margin-top: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  
 }
 
 .flex-row {
@@ -233,6 +259,10 @@ textarea {
 .card {
   width: 25%;
   text-align: center;
+}
+
+.image {
+  margin: auto;
 }
 
 .img-thumbnail {
