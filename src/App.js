@@ -3,21 +3,20 @@ import Nav from './components/Nav';
 import About from './components/About';
 import Gallery from './components/Gallery';
 import ContactForm from './components/ContactForm'
+import Resume from './components/Resume'
 
 function App() {
   const [categories] = useState([
     {
       name: 'commercial',
       description: 'Photos of grocery stores, food trucks, and other commercial projects',
-    },
-    { name: 'portraits', description: 'Portraits of people in my life' },
-    { name: 'food', description: 'Delicious delicacies' },
-    { name: 'landscape', description: 'Fields, farmhouses, waterfalls, and the beauty of nature' },
+    }
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
   const [contactSelected, setContactSelected] = useState(false);
   const [aboutSelected, setAboutSelected] = useState(false);
+  const[resumeSelected, setResumeSelected] = useState(false);
 
   return (
     <div>
@@ -29,12 +28,15 @@ function App() {
         setContactSelected = {setContactSelected}
         aboutSelected={aboutSelected}
         setAboutSelected={setAboutSelected}
+        setResumeSelected={setResumeSelected}
+        resumeSelected = {resumeSelected}
       ></Nav>
       <main>
       {!contactSelected ? (
   <>
-    {!aboutSelected &&<Gallery currentCategory={currentCategory}></Gallery>}
+    {!aboutSelected && !resumeSelected && <Gallery currentCategory={currentCategory}></Gallery>}
     {aboutSelected &&<About></About>}
+    {resumeSelected && <Resume></Resume>}
   </>
 ) : (
     <ContactForm></ContactForm>

@@ -9,7 +9,9 @@ function Nav(props) {
     contactSelected,
     setContactSelected,
     aboutSelected,
-    setAboutSelected
+    setAboutSelected,
+    resumeSelected,
+    setResumeSelected
   } = props;
 
 
@@ -25,12 +27,12 @@ function Nav(props) {
       <nav>
         <ul className="flex-row">
         <li className={`mx-2 ${aboutSelected && 'navActive'}`}>
-            <a data-testid="about" href="#about" onClick={() => setAboutSelected(true) & setContactSelected(false)}>
+            <span data-testid="about" onClick={() => setAboutSelected(true) & setContactSelected(false) & setResumeSelected(false)}>
               About me
-            </a>
+            </span>
           </li>
           <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-            <span onClick={() => setContactSelected(true) & setAboutSelected(false)}>
+            <span onClick={() => setContactSelected(true) & setAboutSelected(false) & setResumeSelected(false)}>
               Contact
             </span>
           </li>
@@ -46,12 +48,18 @@ function Nav(props) {
                   setCurrentCategory(category);
                   setContactSelected(false);
                   setAboutSelected(false);
+                  setResumeSelected(false);
                 }}
               >
                 {capitalizeFirstLetter(category.name)}
               </span>
             </li>
           ))}
+          <li className={`mx-2 ${resumeSelected && 'navActive'}`}>
+          <span onClick={() => setContactSelected(false) & setAboutSelected(false) & setResumeSelected(true)}>
+              Resume
+            </span>
+          </li>
         </ul>
       </nav>
     </header>
