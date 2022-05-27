@@ -198,6 +198,10 @@ textarea {
   
 }
 
+.justify-content-center {
+  justify-self: space-around;
+}
+
 .flex-row {
   display: flex;
   flex-wrap: wrap;

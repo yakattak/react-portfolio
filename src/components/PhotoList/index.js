@@ -30,6 +30,13 @@ const PhotoList = ({ category }) => {
         repoLink: 'https://github.com/yakattak/password-generator',
         deployLink: 'https://yakattak.github.io/password-generator/'
     },
+    {
+          name: 'How Coffee U Bean?',
+          category: 'applications',
+          description: 'rate the coffee you love!',
+          repoLink: 'https://github.com/Jiyeon31',
+          deployLink: 'https://yakattak-coffee1.herokuapp.com/'
+        }
   ]);
 
   const currentPhotos = photos.filter(photo => photo.category === category);
@@ -44,7 +51,7 @@ const PhotoList = ({ category }) => {
   return (
     <div>
       {isModalOpen && <Modal currentPhoto={currentPhoto} onClose={toggleModal} />}
-      <div className="flex-row">
+      <div className="flex-row justify-content-center">
         {currentPhotos.map((image, i) => (
           <img
             src={require(`../../assets/small/${category}/${i}.jpg`).default}
