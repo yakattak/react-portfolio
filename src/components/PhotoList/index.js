@@ -41,8 +41,8 @@ const PhotoList = ({ category }) => {
         {
           name: 'Deep Thoughts',
           category: 'applications',
-          description: 'A place for posting thoughts! This is my first attempt at AWS and EC2 - with images hosted on an S3 bucket. Not an original! This was a lesson I worked through for my boding bootcamp!',
-          repoLink: 'Sorry! no link for this one! It has sensitive AWS credentials!',
+          description: 'A place for posting thoughts! This is my first attempt at AWS and EC2 - with images hosted on an S3 bucket. Not an original! This was a lesson I worked through for my boding bootcamp! Sorry! no link for this one! It has sensitive AWS credentials!',
+          repoLink: '',
           deployLink: 'http://52.202.213.128/'
         }
   ]);

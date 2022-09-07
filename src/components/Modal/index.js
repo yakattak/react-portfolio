@@ -17,7 +17,7 @@ function Modal({onClose, currentPhoto}) {
                     {description}
                 </p>
                 <p>
-                <a href = {repoLink} target ='_blank'> Github Repo Link </a>
+                <a href = {repoLink} target ='_blank'> GitHub: {repoLink} </a>
                 </p>
                 <p>
                 <a href = {deployLink} target ='_blank'>Link to Deployed Site </a>
