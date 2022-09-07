@@ -6,8 +6,9 @@ const PhotoList = ({ category }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const [photos] = useState([
+    
     {
-      name: 'photo-port',
+      name: 'weather-me',
       category: 'applications',
       description:
         'Coding bootcamp assignment: Create a weather app that pulls from openweathermap, saves search history to local storage, and displays current and 5 day weather.',
@@ -36,6 +37,13 @@ const PhotoList = ({ category }) => {
           description: 'rate the coffee you love!',
           repoLink: 'https://github.com/Jiyeon31',
           deployLink: 'https://yakattak-coffee1.herokuapp.com/'
+        },
+        {
+          name: 'Deep Thoughts',
+          category: 'applications',
+          description: 'A place for posting thoughts! This is my first attempt at AWS and EC2 - with images hosted on an S3 bucket. Not an original! This was a lesson I worked through for my boding bootcamp!',
+          repoLink: 'Sorry! no link for this one! It has sensitive AWS credentials!',
+          deployLink: 'http://52.202.213.128/'
         }
   ]);
 

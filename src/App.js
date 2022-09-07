@@ -41,9 +41,9 @@ function App() {
 ) : (
     <ContactForm></ContactForm>
   )}
-      </main>
+      </main >
       <footer>
-        <p>
+        <p >
           <a href = "https://github.com/yakattak" target = '_blank'> Link to my Github!</a>
         </p>
         <p>
