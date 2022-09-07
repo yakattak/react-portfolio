@@ -1,4 +1,4 @@
-[Live](https://yakattak.github.io/react-portfolio/)
+[Link to Live Site](https://yakattak.github.io/react-portfolio/)
 
 # Getting Started with Create React App
 
