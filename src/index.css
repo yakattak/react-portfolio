@@ -128,6 +128,11 @@ button[disabled] {
 
 img {
   max-width: 100%;
+  border:#111111;
+}
+.img-thumbnail {
+  border:#111111;
+  border-width: thick;
 }
 
 span[role="img"] {
@@ -196,13 +201,29 @@ textarea {
 .about-section {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   
 }
 
+.thick-border {
+  border: 2px solid black;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
 .justify-content-center {
-  justify-self: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
 }
 
 .flex-row {

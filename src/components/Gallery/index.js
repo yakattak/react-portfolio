@@ -7,8 +7,12 @@ function Gallery(props) {
   return (
     <section>
       <h1 data-testid="h1tag">{capitalizeFirstLetter(currentCategory.name)}</h1>
-      <p>{currentCategory.description}</p>
+      <div className = 'text-align-center flex-row justify-content-center'>
+      <p>
+        {currentCategory.description}</p>
+        </div>
       <PhotoList category={currentCategory.name} />
+      
     </section>
   );
 }

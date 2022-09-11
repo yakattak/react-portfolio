@@ -57,18 +57,23 @@ const PhotoList = ({ category }) => {
   }
 
   return (
-    <div>
+    <div className ="flex-row justify-content-center">
       {isModalOpen && <Modal currentPhoto={currentPhoto} onClose={toggleModal} />}
       <div className="flex-row justify-content-center">
-        {currentPhotos.map((image, i) => (
+       {currentPhotos.map((image, i) => (
+        <div className ="thick-border justify-content-center">
+          
           <img
+            
             src={require(`../../assets/small/${category}/${i}.jpg`).default}
             alt={image.name}
             className="img-thumbnail mx-1"
             onClick={() => toggleModal(image, i)}
             key={image.name}
           />
+         </div>
         ))}
+        
       </div>
     </div>
   );

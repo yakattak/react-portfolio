@@ -9,7 +9,7 @@ function App() {
   const [categories] = useState([
     {
       name: 'applications',
-      description: 'Photos of grocery stores, food trucks, and other applications projects',
+      description: 'Click on a picture of an app to get more info!',
     }
   ]);
 
